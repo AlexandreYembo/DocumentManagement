@@ -1,26 +1,56 @@
-﻿using DocumentManagement.Application.Interfaces;
+﻿using AutoMapper;
+using DocumentManagement.Application.DTOs;
+using DocumentManagement.Application.Interfaces;
 using DocumentManagement.Domain.Interfaces;
+using DocumentManagement.Domain.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DocumentManagement.Application.Services
 {
     public class DocumentService : IDocumentService
     {
-        private readonly IUserRepository _userRepository;
+        private readonly IDocumentRepository _documentRepository;
+        private readonly IUserService _userService;
+        private readonly IDocumentStorage _documentStorage;
 
-        public DocumentService(IUserRepository userRepository)
+        public DocumentService(IDocumentRepository documentRepository,
+                               IUserService userService,
+                               IDocumentStorage documentStorage)
         {
-            _userRepository = userRepository;
-        }
-
-        public bool ValidateLogin(string login)
-        {
-            return _userRepository.GetByLogin(login) != null;
+            _documentRepository = documentRepository;
+            _userService = userService;
+            _documentStorage = documentStorage;
         }
 
         public void Dispose()
         {
             GC.SuppressFinalize(this);
         }
+
+        public long Create(Document document, string username)
+        {
+            var user = _userService.GetOrCreateUser(username);
+            document.IdUser = user.Id;
+
+            document.FileNameStored = _documentStorage.Store(document.Name, document.ContentBase64);
+
+            return _documentRepository.Create(document);
+        }
+
+        public void Delete(long id) =>
+            _documentRepository.Delete(id);
+
+        public IEnumerable<DocumentDTO> List() =>
+            _documentRepository.List().Select(d =>
+            {
+                var dto = Mapper.Map<DocumentDTO>(d);
+                dto.ContentBase64 = _documentStorage.GetBase64(d.FileNameStored);
+                return dto;
+            });
+
+        public void UpdateAccessDate(long id) =>
+            _documentRepository.UpdateAccessDate(id);
     }
 }

@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace DocumentManagement.Application.DTOs
 {
-    public class DocumentDTO
+    public class DocumentInsertDTO
     {
-        public long Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public long Size { get; set; }
+        [Required]
         public string Format { get; set; }
+        [Required]
         public string ContentBase64 { get; set; }
-        public DateTime UploadDate { get; set; }
-        public DateTime UpdateDate { get; set; }
-        public DateTime LastAccessDate { get; set; }
     }
 }

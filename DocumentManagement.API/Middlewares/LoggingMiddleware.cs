@@ -2,9 +2,7 @@
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,7 +47,7 @@ namespace DocumentManagement.API.Middlewares
             var bodyAsText = Encoding.UTF8.GetString(buffer);
             request.Body = body;
 
-            return $"Request: {request.Scheme} {request.Host}{request.Path} {request.QueryString} {bodyAsText}";
+            return $"Request: {request.Scheme}://{request.Host}{request.Path} {request.QueryString} {bodyAsText}";
         }
 
         private async Task<string> FormatResponse(HttpResponse response)

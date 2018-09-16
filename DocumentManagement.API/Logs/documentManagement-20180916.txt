@@ -1,0 +1,1420 @@
+2018-09-16T14:40:52.9657606-03:00 0HLGRVE694BSB:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:40:52.9657605-03:00 0HLGRVE694BSC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:40:53.0390063-03:00 0HLGRVE694BSB:00000001 [INF] Request finished in 71.8358ms 200  (791a596a)
+2018-09-16T14:40:53.1847010-03:00 0HLGRVE694BSC:00000001 [INF] Request finished in 226.305ms 200 text/html (791a596a)
+2018-09-16T14:40:53.7003197-03:00 0HLGRVE694BSB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T14:40:53.9274714-03:00 0HLGRVE694BSB:00000002 [INF] Request finished in 229.1586ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T14:42:17.8230865-03:00 0HLGRVEVI0T5P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:42:17.8230865-03:00 0HLGRVEVI0T5Q:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:42:17.8773654-03:00 0HLGRVEVI0T5Q:00000001 [INF] Request finished in 48.9146ms 200  (791a596a)
+2018-09-16T14:42:18.0221147-03:00 0HLGRVEVI0T5P:00000001 [INF] Request finished in 209.2592ms 200 text/html (791a596a)
+2018-09-16T14:42:18.4320970-03:00 0HLGRVEVI0T5Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T14:42:18.6073892-03:00 0HLGRVEVI0T5Q:00000002 [INF] Request finished in 175.3589ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T14:42:20.5111084-03:00 0HLGRVEVI0T5P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T14:42:20.5550378-03:00 0HLGRVEVI0T5P:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T14:42:25.5474383-03:00 0HLGRVEVI0T5P:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 4986.5017ms (afa2e885)
+2018-09-16T14:42:25.6004460-03:00 0HLGRVEVI0T5P:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NotImplementedException: The method or operation is not implemented.
+   at DocumentManagement.Infrastructure.Repository.UserRepository.GetByLogin(String login) in C:\Projetos LTM\DocumentManagement\DocumentManagement.Infrastructure\Repository\UserRepository.cs:line 13
+   at DocumentManagement.Application.Services.UserService.ValidateLogin(String login) in C:\Projetos LTM\DocumentManagement\DocumentManagement.Application\Services\UserService.cs:line 18
+   at DocumentManagement.API.Handlers.UsernameRequirementFilter.OnActionExecuting(ActionExecutingContext context) in C:\Projetos LTM\DocumentManagement\DocumentManagement.API\Filters\UsernameRequirementFilter.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-16T14:42:25.6359345-03:00 0HLGRVEVI0T5P:00000002 [INF] Request finished in 5124.909ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-16T14:42:44.3859497-03:00 0HLGRVF7FL447:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:42:44.3859541-03:00 0HLGRVF7FL448:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:42:44.4300682-03:00 0HLGRVF7FL448:00000001 [INF] Request finished in 45.2834ms 200  (791a596a)
+2018-09-16T14:42:44.5672064-03:00 0HLGRVF7FL447:00000001 [INF] Request finished in 190.3555ms 200 text/html (791a596a)
+2018-09-16T14:42:44.9899209-03:00 0HLGRVF7FL448:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T14:42:45.1464633-03:00 0HLGRVF7FL448:00000002 [INF] Request finished in 160.7711ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T14:42:55.4165309-03:00 0HLGRVF7FL447:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T14:42:55.4553411-03:00 0HLGRVF7FL447:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T14:42:55.4749470-03:00 0HLGRVF7FL447:00000002 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T14:43:03.8190308-03:00 0HLGRVF7FL447:00000002 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 8336.7426ms. (50a9e262)
+2018-09-16T14:43:03.8288352-03:00 0HLGRVF7FL447:00000002 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T14:43:03.8384443-03:00 0HLGRVF7FL447:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 8377.3506ms (afa2e885)
+2018-09-16T14:43:03.8439682-03:00 0HLGRVF7FL447:00000002 [INF] Request finished in 8427.8024ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T14:44:07.0916471-03:00 0HLGRVG04B8P3:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:44:07.0916886-03:00 0HLGRVG04B8P2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:44:07.1354034-03:00 0HLGRVG04B8P3:00000001 [INF] Request finished in 50.2854ms 200  (791a596a)
+2018-09-16T14:44:07.2966107-03:00 0HLGRVG04B8P2:00000001 [INF] Request finished in 213.6096ms 200 text/html (791a596a)
+2018-09-16T14:44:07.7701255-03:00 0HLGRVG04B8P3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T14:44:07.9590397-03:00 0HLGRVG04B8P3:00000002 [INF] Request finished in 190.3503ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T14:44:26.0935945-03:00 0HLGRVG04B8P2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T14:44:26.1272175-03:00 0HLGRVG04B8P2:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T14:44:26.1476163-03:00 0HLGRVG04B8P2:00000002 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T14:44:28.2688658-03:00 0HLGRVG04B8P2:00000002 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2111.0869ms. (50a9e262)
+2018-09-16T14:44:28.2822701-03:00 0HLGRVG04B8P2:00000002 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T14:44:28.2939427-03:00 0HLGRVG04B8P2:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 2160.4667ms (afa2e885)
+2018-09-16T14:44:28.2998591-03:00 0HLGRVG04B8P2:00000002 [INF] Request finished in 2205.835ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T14:56:31.4021898-03:00 0HLGRVMTUFD0U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T14:56:31.4021899-03:00 0HLGRVMTUFD0T:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:56:31.4021898-03:00 0HLGRVMTUFD0S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:56:31.4633748-03:00 0HLGRVMTUFD0T:00000001 [INF] Request finished in 54.617ms 200  (791a596a)
+2018-09-16T14:56:31.6210879-03:00 0HLGRVMTUFD0S:00000001 [INF] Request finished in 230.0257ms 200 text/html (791a596a)
+2018-09-16T14:56:31.6338611-03:00 0HLGRVMTUFD0U:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T14:56:31.6604507-03:00 0HLGRVMTUFD0U:00000001 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T14:56:33.4563808-03:00 0HLGRVMTUFD0T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T14:56:33.4585237-03:00 0HLGRVMTUFD0U:00000001 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1788.6217ms. (50a9e262)
+2018-09-16T14:56:33.4729245-03:00 0HLGRVMTUFD0U:00000001 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T14:56:33.4940598-03:00 0HLGRVMTUFD0U:00000001 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1853.503ms (afa2e885)
+2018-09-16T14:56:33.5004563-03:00 0HLGRVMTUFD0U:00000001 [INF] Request finished in 2107.8292ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T14:56:33.6259108-03:00 0HLGRVMTUFD0T:00000002 [INF] Request finished in 170.049ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T14:57:38.0991413-03:00  [FTL] Application startup exception (6c57a5ba)
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'DocumentManagement.API.Middlewares.LoggingMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-09-16T14:57:38.4379842-03:00 0HLGRVNHU2O4H:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:57:38.4379946-03:00 0HLGRVNHU2O4I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:57:38.4597842-03:00 0HLGRVNHU2O4H:00000001 [INF] Request finished in 25.9635ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-16T14:57:38.4722340-03:00 0HLGRVNHU2O4I:00000001 [ERR] Connection id ""0HLGRVNHU2O4I"", Request id ""0HLGRVNHU2O4I:00000001"": An unhandled exception was thrown by the application. (560e7d32)
+System.ObjectDisposedException: Cannot write to the response body, the response has completed.
+Object name: 'HttpResponseStream'.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.ValidateState(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-09-16T14:57:38.4762200-03:00 0HLGRVNHU2O4I:00000001 [INF] Request finished in 42.5357ms 500  (791a596a)
+2018-09-16T14:57:41.8090982-03:00 0HLGRVNHU2O4I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T14:57:41.8142209-03:00 0HLGRVNHU2O4I:00000002 [INF] Request finished in 4.8205ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-16T14:58:13.4653915-03:00 0HLGRVNSBU76M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T14:58:13.4653910-03:00 0HLGRVNSBU76L:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T14:58:13.5180870-03:00 0HLGRVNSBU76L:00000001 [INF] Request finished in 50.8563ms 200  (791a596a)
+2018-09-16T14:58:13.6638725-03:00 0HLGRVNSBU76M:00000001 [INF] Request finished in 207.6944ms 200 text/html (791a596a)
+2018-09-16T14:58:14.4229330-03:00 0HLGRVNSBU76L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T14:58:14.6124018-03:00 0HLGRVNSBU76L:00000002 [INF] Request finished in 189.1513ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T14:58:16.9096533-03:00 0HLGRVNSBU76M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T14:58:16.9494409-03:00 0HLGRVNSBU76M:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T14:58:16.9691588-03:00 0HLGRVNSBU76M:00000002 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T14:58:18.4194292-03:00 0HLGRVNSBU76M:00000002 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1444.7409ms. (50a9e262)
+2018-09-16T14:58:18.4295643-03:00 0HLGRVNSBU76M:00000002 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T14:58:18.4384917-03:00 0HLGRVNSBU76M:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1483.7388ms (afa2e885)
+2018-09-16T14:58:18.4434902-03:00 0HLGRVNSBU76M:00000002 [INF] Request finished in 1533.614ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:01:38.5721260-03:00 0HLGRVPPFUC9R:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T15:01:38.5721261-03:00 0HLGRVPPFUC9Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T15:01:38.6237473-03:00 0HLGRVPPFUC9R:00000001 [INF] Request finished in 50.5432ms 200  (791a596a)
+2018-09-16T15:01:38.7649024-03:00 0HLGRVPPFUC9Q:00000001 [INF] Request finished in 201.8612ms 200 text/html (791a596a)
+2018-09-16T15:01:39.1905850-03:00 0HLGRVPPFUC9R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T15:01:39.4223474-03:00 0HLGRVPPFUC9R:00000002 [INF] Request finished in 231.9955ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T15:01:42.8227700-03:00 0HLGRVPPFUC9Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T15:01:42.8538268-03:00 0HLGRVPPFUC9Q:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T15:01:42.8735904-03:00 0HLGRVPPFUC9Q:00000002 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T15:01:44.6057717-03:00 0HLGRVPPFUC9Q:00000002 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1726.6379ms. (50a9e262)
+2018-09-16T15:01:44.6180577-03:00 0HLGRVPPFUC9Q:00000002 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T15:01:44.6301509-03:00 0HLGRVPPFUC9Q:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1769.0311ms (afa2e885)
+2018-09-16T15:01:44.6368320-03:00 0HLGRVPPFUC9Q:00000002 [INF] Request finished in 1813.5324ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:03:24.8833581-03:00 0HLGRVQP5TK99:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T15:03:24.8833583-03:00 0HLGRVQP5TK9B:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T15:03:24.8833660-03:00 0HLGRVQP5TK9A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T15:03:24.9327071-03:00 0HLGRVQP5TK9B:00000001 [INF] Request finished in 50.0807ms 200  (791a596a)
+2018-09-16T15:03:25.0804451-03:00 0HLGRVQP5TK9A:00000001 [INF] Request finished in 206.9215ms 200 text/html (791a596a)
+2018-09-16T15:03:25.1071248-03:00 0HLGRVQP5TK99:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T15:03:25.1293612-03:00 0HLGRVQP5TK99:00000001 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T15:03:26.4983677-03:00 0HLGRVQP5TK9B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T15:03:26.4995051-03:00 0HLGRVQP5TK99:00000001 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1361.6892ms. (50a9e262)
+2018-09-16T15:03:26.5126983-03:00 0HLGRVQP5TK99:00000001 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T15:03:26.5369457-03:00 0HLGRVQP5TK99:00000001 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1415.6405ms (afa2e885)
+2018-09-16T15:03:26.5437420-03:00 0HLGRVQP5TK99:00000001 [INF] Request finished in 1669.2083ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:03:26.6678241-03:00 0HLGRVQP5TK9B:00000002 [INF] Request finished in 168.5285ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T15:03:30.3395537-03:00 0HLGRVQP5TK9A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T15:03:30.3437172-03:00 0HLGRVQP5TK9A:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T15:03:30.3885141-03:00 0HLGRVQP5TK9A:00000002 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T15:03:32.0652244-03:00 0HLGRVQP5TK9A:00000002 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1674.8479ms. (50a9e262)
+2018-09-16T15:03:32.0680582-03:00 0HLGRVQP5TK9A:00000002 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T15:03:32.0702521-03:00 0HLGRVQP5TK9A:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1724.5658ms (afa2e885)
+2018-09-16T15:03:32.0721229-03:00 0HLGRVQP5TK9A:00000002 [INF] Request finished in 1732.7271ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:05:05.5879941-03:00 0HLGRVRN6BJ8E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T15:05:05.5879941-03:00 0HLGRVRN6BJ8D:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T15:05:05.6369013-03:00 0HLGRVRN6BJ8D:00000001 [INF] Request finished in 47.8662ms 200  (791a596a)
+2018-09-16T15:05:05.7759723-03:00 0HLGRVRN6BJ8E:00000001 [INF] Request finished in 195.9966ms 200 text/html (791a596a)
+2018-09-16T15:05:06.1478832-03:00 0HLGRVRN6BJ8D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T15:05:06.3314580-03:00 0HLGRVRN6BJ8D:00000002 [INF] Request finished in 183.4874ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T15:05:09.4860049-03:00 0HLGRVRN6BJ8E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T15:05:09.5165718-03:00 0HLGRVRN6BJ8E:00000002 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T15:05:09.5334261-03:00 0HLGRVRN6BJ8E:00000002 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T15:05:12.0896264-03:00 0HLGRVRN6BJ8E:00000002 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2549.8546ms. (50a9e262)
+2018-09-16T15:05:12.1025190-03:00 0HLGRVRN6BJ8E:00000002 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T15:05:12.1146994-03:00 0HLGRVRN6BJ8E:00000002 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 2591.3006ms (afa2e885)
+2018-09-16T15:05:12.1199329-03:00 0HLGRVRN6BJ8E:00000002 [INF] Request finished in 2635.9797ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:07:06.9629032-03:00 0HLGRVSRBTFBS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T15:07:06.9628978-03:00 0HLGRVSRBTFBR:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T15:07:11.4953693-03:00 0HLGRVSRBTFBT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T15:07:12.1763203-03:00 0HLGRVSRBTFBR:00000001 [INF] Request finished in 5194.534ms 200  (791a596a)
+2018-09-16T15:07:12.1961809-03:00 0HLGRVSRBTFBS:00000001 [INF] Request: https localhost:44349/swagger/index.html   (0b7f141a)
+2018-09-16T15:07:12.1961810-03:00 0HLGRVSRBTFBT:00000001 [INF] Request: https localhost:44349/api/Document   (f2d3474e)
+2018-09-16T15:07:28.4257322-03:00 0HLGRVSRBTFBS:00000001 [INF] Response: <!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+          <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="locked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="close">
+      <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow">
+      <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow-down">
+      <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/>
+    </symbol>
+
+
+    <symbol viewBox="0 0 24 24" id="jump-to">
+      <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="expand">
+      <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<div id="swagger-ui"></div>
+
+<!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+<script>
+  if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+    window.fetch = undefined;
+  }
+</script>
+
+<script src="./swagger-ui-bundle.js"> </script>
+<script src="./swagger-ui-standalone-preset.js"> </script>
+<script>
+  window.onload = function () {
+    var configObject = JSON.parse('{"urls":[{"url":"/swagger/document-management-v1/swagger.json","name":"Document Management API"}],"validatorUrl":null}');
+    var oauthConfigObject = JSON.parse('{}');
+
+    // Apply mandatory parameters
+    configObject.dom_id = "#swagger-ui";
+    configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+    configObject.layout = "StandaloneLayout";
+
+    // If oauth2RedirectUrl isn't specified, use the built-in default
+    if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+      configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+
+    // Build a system
+    const ui = SwaggerUIBundle(configObject);
+
+    // Apply OAuth config
+    ui.initOAuth(oauthConfigObject);
+  }
+</script>
+</body>
+
+</html>
+ (749eb817)
+2018-09-16T15:07:28.4421785-03:00 0HLGRVSRBTFBS:00000001 [INF] Request finished in 21488.949ms 200 text/html (791a596a)
+2018-09-16T15:07:28.4485215-03:00 0HLGRVSRBTFBT:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T15:07:28.4900068-03:00 0HLGRVSRBTFBT:00000001 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T15:07:29.7930169-03:00 0HLGRVSRBTFBR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T15:07:29.7970486-03:00 0HLGRVSRBTFBR:00000002 [INF] Request: https localhost:44349/swagger/document-management-v1/swagger.json   (b1ea5b2f)
+2018-09-16T15:07:29.7994113-03:00 0HLGRVSRBTFBT:00000001 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1299.3594ms. (50a9e262)
+2018-09-16T15:07:29.8119520-03:00 0HLGRVSRBTFBT:00000001 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T15:07:29.8296590-03:00 0HLGRVSRBTFBT:00000001 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1368.6452ms (afa2e885)
+2018-09-16T15:07:29.8315276-03:00 0HLGRVSRBTFBT:00000001 [INF] Response: ["value1","value2"] (58656e55)
+2018-09-16T15:07:29.8351473-03:00 0HLGRVSRBTFBT:00000001 [INF] Request finished in 18362.1218ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:07:29.9689954-03:00 0HLGRVSRBTFBR:00000002 [INF] Response: {"swagger":"2.0","info":{"version":"v1","title":"Document Management API"},"paths":{"/api/Document":{"get":{"tags":["Document"],"operationId":"ApiDocumentGet","consumes":[],"produces":["text/plain","application/json","text/json"],"parameters":[],"responses":{"200":{"description":"Success","schema":{"uniqueItems":false,"type":"array","items":{"type":"string"}}},"post":{"tags":["Document"],"operationId":"ApiDocumentPost","consumes":["application/json-patch+json","application/json","text/json","application/*+json"],"produces":[],"parameters":[{"name":"value","in":"body","required":false,"schema":{"type":"string"}}],"responses":{"200":{"description":"Success"}}},"/api/Document/{id}":{"get":{"tags":["Document"],"operationId":"ApiDocumentByIdGet","consumes":[],"produces":["text/plain","application/json","text/json"],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int32"}],"responses":{"200":{"description":"Success","schema":{"type":"string"}}},"put":{"tags":["Document"],"operationId":"ApiDocumentByIdPut","consumes":["application/json-patch+json","application/json","text/json","application/*+json"],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int32"},{"name":"value","in":"body","required":false,"schema":{"type":"string"}}],"responses":{"200":{"description":"Success"}},"delete":{"tags":["Document"],"operationId":"ApiDocumentByIdDelete","consumes":[],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int32"}],"responses":{"200":{"description":"Success"}}},"definitions":{}} (5ded9876)
+2018-09-16T15:07:29.9714488-03:00 0HLGRVSRBTFBR:00000002 [INF] Request finished in 178.0706ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T15:08:33.8776265-03:00 0HLGRVTL8HVTU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T15:08:33.8776260-03:00 0HLGRVTL8HVU0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T15:08:33.8776260-03:00 0HLGRVTL8HVTV:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T15:08:33.9225023-03:00 0HLGRVTL8HVTV:00000001 [INF] Request finished in 56.1875ms 200  (791a596a)
+2018-09-16T15:08:33.9300656-03:00 0HLGRVTL8HVTU:00000001 [INF] Request: https://localhost:44349/swagger/index.html   (f3434e40)
+2018-09-16T15:08:33.9300656-03:00 0HLGRVTL8HVU0:00000001 [INF] Request: https://localhost:44349/api/Document   (352453c2)
+2018-09-16T15:09:30.5079688-03:00 0HLGRVTL8HVTU:00000001 [INF] Response: <!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+          <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="locked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="close">
+      <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow">
+      <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow-down">
+      <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/>
+    </symbol>
+
+
+    <symbol viewBox="0 0 24 24" id="jump-to">
+      <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="expand">
+      <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<div id="swagger-ui"></div>
+
+<!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+<script>
+  if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+    window.fetch = undefined;
+  }
+</script>
+
+<script src="./swagger-ui-bundle.js"> </script>
+<script src="./swagger-ui-standalone-preset.js"> </script>
+<script>
+  window.onload = function () {
+    var configObject = JSON.parse('{"urls":[{"url":"/swagger/document-management-v1/swagger.json","name":"Document Management API"}],"validatorUrl":null}');
+    var oauthConfigObject = JSON.parse('{}');
+
+    // Apply mandatory parameters
+    configObject.dom_id = "#swagger-ui";
+    configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+    configObject.layout = "StandaloneLayout";
+
+    // If oauth2RedirectUrl isn't specified, use the built-in default
+    if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+      configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+
+    // Build a system
+    const ui = SwaggerUIBundle(configObject);
+
+    // Apply OAuth config
+    ui.initOAuth(oauthConfigObject);
+  }
+</script>
+</body>
+
+</html>
+ (749eb817)
+2018-09-16T15:09:30.5511666-03:00 0HLGRVTL8HVTU:00000001 [INF] Request finished in 56683.6216ms 200 text/html (791a596a)
+2018-09-16T15:09:30.5567275-03:00 0HLGRVTL8HVU0:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Document\"}". Executing action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" (a44c0341)
+2018-09-16T15:09:30.5944865-03:00 0HLGRVTL8HVU0:00000001 [INF] Executing action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" - Validation state: Valid (dad538d7)
+2018-09-16T15:09:32.3230602-03:00 0HLGRVTL8HVTV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T15:09:32.3264895-03:00 0HLGRVTL8HVTV:00000002 [INF] Request: https://localhost:44349/swagger/document-management-v1/swagger.json   (18666e6f)
+2018-09-16T15:09:32.3281203-03:00 0HLGRVTL8HVU0:00000001 [INF] Executed action method "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1723.7565ms. (50a9e262)
+2018-09-16T15:09:32.3403973-03:00 0HLGRVTL8HVU0:00000001 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2018-09-16T15:09:32.3574305-03:00 0HLGRVTL8HVU0:00000001 [INF] Executed action "DocumentManagement.API.Controllers.DocumentController.Get (DocumentManagement.API)" in 1787.7623ms (afa2e885)
+2018-09-16T15:09:35.1504669-03:00 0HLGRVTL8HVU0:00000001 [INF] Response: ["value1","value2"] (58656e55)
+2018-09-16T15:09:35.1538068-03:00 0HLGRVTL8HVU0:00000001 [INF] Request finished in 61289.8781ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-16T15:09:55.0837213-03:00 0HLGRVTL8HVTV:00000002 [INF] Response: {"swagger":"2.0","info":{"version":"v1","title":"Document Management API"},"paths":{"/api/Document":{"get":{"tags":["Document"],"operationId":"ApiDocumentGet","consumes":[],"produces":["text/plain","application/json","text/json"],"parameters":[],"responses":{"200":{"description":"Success","schema":{"uniqueItems":false,"type":"array","items":{"type":"string"}}},"post":{"tags":["Document"],"operationId":"ApiDocumentPost","consumes":["application/json-patch+json","application/json","text/json","application/*+json"],"produces":[],"parameters":[{"name":"value","in":"body","required":false,"schema":{"type":"string"}}],"responses":{"200":{"description":"Success"}}},"/api/Document/{id}":{"get":{"tags":["Document"],"operationId":"ApiDocumentByIdGet","consumes":[],"produces":["text/plain","application/json","text/json"],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int32"}],"responses":{"200":{"description":"Success","schema":{"type":"string"}}},"put":{"tags":["Document"],"operationId":"ApiDocumentByIdPut","consumes":["application/json-patch+json","application/json","text/json","application/*+json"],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int32"},{"name":"value","in":"body","required":false,"schema":{"type":"string"}}],"responses":{"200":{"description":"Success"}},"delete":{"tags":["Document"],"operationId":"ApiDocumentByIdDelete","consumes":[],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int32"}],"responses":{"200":{"description":"Success"}}},"definitions":{}} (5ded9876)
+2018-09-16T15:09:55.0857307-03:00 0HLGRVTL8HVTV:00000002 [INF] Request finished in 22763.6374ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T18:55:37.3208169-03:00 0HLGS3SHBUVR9:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:52352/  0 (ca22a1cb)
+2018-09-16T18:55:37.3208169-03:00 0HLGS3SHBUVR8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T18:55:37.3693587-03:00 0HLGS3SHBUVR9:00000001 [INF] Request finished in 54.507ms 200  (791a596a)
+2018-09-16T18:55:37.3750559-03:00 0HLGS3SHBUVR8:00000001 [INF] Request: https://localhost:44349/swagger/index.html   (f3434e40)
+2018-09-16T18:55:37.9032719-03:00 0HLGS3SHBUVR8:00000001 [INF] Response: <!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+          <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="locked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="close">
+      <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow">
+      <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow-down">
+      <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/>
+    </symbol>
+
+
+    <symbol viewBox="0 0 24 24" id="jump-to">
+      <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="expand">
+      <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<div id="swagger-ui"></div>
+
+<!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+<script>
+  if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+    window.fetch = undefined;
+  }
+</script>
+
+<script src="./swagger-ui-bundle.js"> </script>
+<script src="./swagger-ui-standalone-preset.js"> </script>
+<script>
+  window.onload = function () {
+    var configObject = JSON.parse('{"urls":[{"url":"/swagger/document-management-v1/swagger.json","name":"Document Management API"}],"validatorUrl":null}');
+    var oauthConfigObject = JSON.parse('{}');
+
+    // Apply mandatory parameters
+    configObject.dom_id = "#swagger-ui";
+    configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+    configObject.layout = "StandaloneLayout";
+
+    // If oauth2RedirectUrl isn't specified, use the built-in default
+    if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+      configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+
+    // Build a system
+    const ui = SwaggerUIBundle(configObject);
+
+    // Apply OAuth config
+    ui.initOAuth(oauthConfigObject);
+  }
+</script>
+</body>
+
+</html>
+ (749eb817)
+2018-09-16T18:55:37.9145113-03:00 0HLGS3SHBUVR8:00000001 [INF] Request finished in 600.3627ms 200 text/html (791a596a)
+2018-09-16T18:55:38.3491840-03:00 0HLGS3SHBUVR9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T18:55:38.3512283-03:00 0HLGS3SHBUVR9:00000002 [INF] Request: https://localhost:44349/swagger/document-management-v1/swagger.json   (18666e6f)
+2018-09-16T18:55:38.4017500-03:00 0HLGS3SHBUVR8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/favicon-32x32.png   (ca22a1cb)
+2018-09-16T18:55:38.4038790-03:00 0HLGS3SHBUVR8:00000002 [INF] Request: https://localhost:44349/swagger/favicon-32x32.png   (52b93318)
+2018-09-16T18:55:38.4493902-03:00 0HLGS3SHBUVR8:00000002 [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2018-09-16T18:55:38.4518370-03:00 0HLGS3SHBUVR8:00000002 [INF] Response: �PNG
+
+   IHDR           szz�  <IDATx�W�eY~k۶m�^�^۶=F�۶m۶m��o��35i�a�[����ꩲ����H?�7B�׫x<���FagpV�S���L�{E���Trp����^l���?��f"S�0���t��zRb��^�!��?Qq�����]��.h9�\��� N[�\�����o�����&�q�6�;K:�Y��t���|�A\��
+�_��q�𗠫��34�Y����v�\0gǢ���Al[��&���^l��q��G�+ �#����	}uC����Š�7HЇc���B��	b��
+6����9T�@��s44Uk���T�n�����F{���0
+QĹ�vS��.�� �sm��pȮ ��il�� �e_��t�.:��t�g��`1��ǔ � �?�!���_�}��0��i8����/ u��C�^hL!��79, �hL3��;�]h2�5P&�b8`.@~��a~�L�u(��>|ID���@&%����AR���l�����LVY�/ju�Ҡ�a�|nzp_��	�;^�9}�u�� `s���]�``�w*~  �Ӡ�b��bx(�nqx���4�}k�>�I+��k�u`L��]4����3��������Y:�(-�N�e�0�V��0��5��~\���)&��V�l�� s�^� �+ �:G�p��<B����д. �ت	��<�5A	����k#�	42�:��ޮ	"0)���	�r�	�'+-;a�pB)fw�0�f"]��A"�s���HzZ���>,�65�P�J�}Τ��{m�����ۤ-��1�S�%�P`v�#|Gg�	W��I1���6E�٨�UTe
+���f��umc�����	�4�g�9���<�����YǬ4$h�v�!	�{ʹ!�ؒ%h���_�1�iσ�p�$�ڔ�qB@�����A��n{��Yu�'~����A+�4���:�0�v�$�#���m!OXh8j|g��a���[y��k�4C$��#��� 1�"��i��0����XE�������$�8���ԂFNG�6��1�d(�@�QX����YG� �y3]�J�"    IEND�B`� (e4c82cf1)
+2018-09-16T18:55:38.4564637-03:00 0HLGS3SHBUVR8:00000002 [INF] Request finished in 52.37ms 200 image/png (791a596a)
+2018-09-16T18:55:38.4622439-03:00 0HLGS3SHBUVR8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/favicon-16x16.png   (ca22a1cb)
+2018-09-16T18:55:38.4649662-03:00 0HLGS3SHBUVR8:00000003 [INF] Request: https://localhost:44349/swagger/favicon-16x16.png   (b742a12f)
+2018-09-16T18:55:38.4681006-03:00 0HLGS3SHBUVR8:00000003 [INF] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"' (27b0a520)
+2018-09-16T18:55:38.4707188-03:00 0HLGS3SHBUVR8:00000003 [INF] Response: �PNG
+
+   IHDR         ��a  �IDATx�SLuq�����0�)�a�k6����k�5/ۍqxƔm�{�O��l��������P/[�Pġ�?�t>7s��7IR	a�j��1�]���L�����)�f����<��4����OA�F��<� M�}L�����I{֍�s�4�sfh�?�kprw <��ǆ��I
+��ׄy3g1T$�cq�bq�k�'Q��,�x|;F��� ��x|?q����ZF��J���n1�k`:}�y��B�|6z�r�4����䔐���P�c@�|�*�4ȧ�'�h ��2�vK}B��+D
+ǁ)���؋x�(���l��-�78��Ǧ����d�\m��	uQ�����w�Q�4a$���(V�F�ߤ��&,+͓�b�� qt��-���m2j���s    IEND�B`� (521a8a75)
+2018-09-16T18:55:38.4735687-03:00 0HLGS3SHBUVR8:00000003 [INF] Request finished in 10.5701ms 200 image/png (791a596a)
+2018-09-16T18:55:38.5859595-03:00 0HLGS3SHBUVR9:00000002 [INF] Response: {"swagger":"2.0","info":{"version":"v1","title":"Document Management API"},"paths":{"/api/Document":{"get":{"tags":["Document"],"summary":"Get Uploaded Documents","operationId":"ApiDocumentGet","consumes":[],"produces":["text/plain","application/json","text/json"],"parameters":[],"responses":{"200":{"description":"Success","schema":{"uniqueItems":false,"type":"array","items":{"$ref":"#/definitions/DocumentDTO"}}},"post":{"tags":["Document"],"summary":"Get Uploaded Documents","operationId":"ApiDocumentPost","consumes":["application/json-patch+json","application/json","text/json","application/*+json"],"produces":["text/plain","application/json","text/json"],"parameters":[{"name":"value","in":"body","required":false,"schema":{"$ref":"#/definitions/DocumentInsertDTO"}}],"responses":{"201":{"description":"Success","schema":{"format":"int64","type":"integer"}},"400":{"description":"Bad Request","schema":{"uniqueItems":false,"type":"array","items":{"type":"string"}}}},"/api/Document/{id}":{"delete":{"tags":["Document"],"summary":"Delete document","operationId":"ApiDocumentByIdDelete","consumes":[],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int64"}],"responses":{"204":{"description":"Success"}},"patch":{"tags":["Document"],"summary":"Update Access Date","operationId":"ApiDocumentByIdPatch","consumes":[],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int64"}],"responses":{"204":{"description":"Success"}}},"definitions":{"DocumentDTO":{"type":"object","properties":{"id":{"format":"int64","type":"integer"},"name":{"type":"string"},"size":{"format":"int64","type":"integer"},"format":{"type":"string"},"contentBase64":{"type":"string"},"uploadDate":{"format":"date-time","type":"string"},"updateDate":{"format":"date-time","type":"string"},"lastAccessDate":{"format":"date-time","type":"string"}},"DocumentInsertDTO":{"required":["name","size","format","contentBase64"],"type":"object","properties":{"name":{"type":"string"},"size":{"format":"int64","type":"integer"},"format":{"type":"string"},"contentBase64":{"type":"string"}}} (8a1bd2fd)
+2018-09-16T18:55:38.5879959-03:00 0HLGS3SHBUVR9:00000002 [INF] Request finished in 238.7256ms 200 application/json;charset=utf-8 (791a596a)
+2018-09-16T18:55:45.0877606-03:00 0HLGS3SHBUVR8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44349/api/Document   (ca22a1cb)
+2018-09-16T18:55:45.0899844-03:00 0HLGS3SHBUVR8:00000004 [INF] Request: https://localhost:44349/api/Document   (352453c2)
+2018-09-16T18:55:45.1641632-03:00 0HLGS3SHBUVR8:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'DocumentManagement.Infrastructure.Context.DatabaseContext' while attempting to activate 'DocumentManagement.Infrastructure.Repository.UserRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-16T18:55:45.2024444-03:00 0HLGS3SHBUVR8:00000004 [INF] Response: <!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Internal Server Error</title>
+        <style>
+            body {
+    font-family: 'Segoe UI', Tahoma, Arial, Helvetica, sans-serif;
+    font-size: .813em;
+    color: #222;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    /*font-family: 'Segoe UI',Tahoma,Arial,Helvetica,sans-serif;*/
+    font-weight: 100;
+}
+
+h1 {
+    color: #44525e;
+    margin: 15px 0 15px 0;
+}
+
+h2 {
+    margin: 10px 5px 0 0;
+}
+
+h3 {
+    color: #363636;
+    margin: 5px 5px 0 0;
+}
+
+code {
+    font-family: Consolas, "Courier New", courier, monospace;
+}
+
+body .titleerror {
+    padding: 3px 3px 6px 3px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+body .location {
+    margin: 3px 0 10px 30px;
+}
+
+#header {
+    font-size: 18px;
+    padding: 15px 0;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 0;
+}
+
+    #header li {
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+        color: #a0a0a0;
+        cursor: pointer;
+    }
+
+    #header .selected {
+        background: #44c5f2;
+        color: #fff;
+    }
+
+#stackpage ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /*border-bottom: 1px #ddd solid;*/
+}
+
+#stackpage .details {
+    font-size: 1.2em;
+    padding: 3px;
+    color: #000;
+}
+
+#stackpage .stackerror {
+    padding: 5px;
+    border-bottom: 1px #ddd solid;
+}
+
+
+#stackpage .frame {
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+    #stackpage .frame h3 {
+        padding: 2px;
+        margin: 0;
+    }
+
+#stackpage .source {
+    padding: 0 0 0 30px;
+}
+
+    #stackpage .source ol li {
+        font-family: Consolas, "Courier New", courier, monospace;
+        white-space: pre;
+        background-color: #fbfbfb;
+    }
+
+#stackpage .frame .source .highlight li span {
+    color: #FF0000;
+}
+
+#stackpage .source ol.collapsible li {
+    color: #888;
+}
+
+    #stackpage .source ol.collapsible li span {
+        color: #606060;
+    }
+
+.page table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 0 20px;
+}
+
+.page th {
+    vertical-align: bottom;
+    padding: 10px 5px 5px 5px;
+    font-weight: 400;
+    color: #a0a0a0;
+    text-align: left;
+}
+
+.page td {
+    padding: 3px 10px;
+}
+
+.page th, .page td {
+    border-right: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    border-left: 1px transparent solid;
+    border-top: 1px transparent solid;
+    box-sizing: border-box;
+}
+
+    .page th:last-child, .page td:last-child {
+        border-right: 1px transparent solid;
+    }
+
+.page .length {
+    text-align: right;
+}
+
+a {
+    color: #1ba1e2;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #13709e;
+        text-decoration: underline;
+    }
+
+.showRawException {
+    cursor: pointer;
+    color: #44c5f2;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    padding: 0;
+}
+
+.rawExceptionStackTrace {
+    font-size: 1.2em;
+}
+
+.rawExceptionBlock {
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+}
+
+.showRawExceptionContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.expandCollapseButton {
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    position: absolute;
+    left: 10px;
+    background-color: #eee;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>An unhandled exception occurred while processing the request.</h1>
+            <div class="titleerror">InvalidOperationException: Unable to resolve service for type &#x27;DocumentManagement.Infrastructure.Context.DatabaseContext&#x27; while attempting to activate &#x27;DocumentManagement.Infrastructure.Repository.UserRepository&#x27;.</div>
+                <p class="location">Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, bool throwIfCallSiteNotFound)</p>
+        <ul id="header">
+            <li id="stack" tabindex="1" class="selected">
+                Stack
+            </li>
+            <li id="query" tabindex="2">
+                Query
+            </li>
+            <li id="cookies" tabindex="3">
+                Cookies
+            </li>
+            <li id="headers" tabindex="4">
+                Headers
+            </li>
+        </ul>
+
+        <div id="stackpage" class="page">
+            <ul>
+                                    <li>
+                        <h2 class="stackerror">InvalidOperationException: Unable to resolve service for type &#x27;DocumentManagement.Infrastructure.Context.DatabaseContext&#x27; while attempting to activate &#x27;DocumentManagement.Infrastructure.Repository.UserRepository&#x27;.</h2>
+                        <ul>
+                            <li class="frame" id="frame1">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, bool throwIfCallSiteNotFound)</h3>
+
+                            </li>
+                            <li class="frame" id="frame2">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame3">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame4">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame5">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame6">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, bool throwIfCallSiteNotFound)</h3>
+
+                            </li>
+                            <li class="frame" id="frame7">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame8">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame9">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame10">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame11">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, bool throwIfCallSiteNotFound)</h3>
+
+                            </li>
+                            <li class="frame" id="frame12">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame13">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame14">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame15">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)</h3>
+
+                            </li>
+                            <li class="frame" id="frame16">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)</h3>
+
+                            </li>
+                            <li class="frame" id="frame17">
+                                    <h3>System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;.GetOrAdd(TKey key, Func&lt;TKey, TValue&gt; valueFactory)</h3>
+
+                            </li>
+                            <li class="frame" id="frame18">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)</h3>
+
+                            </li>
+                            <li class="frame" id="frame19">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)</h3>
+
+                            </li>
+                            <li class="frame" id="frame20">
+                                    <h3>Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)</h3>
+
+                            </li>
+                            <li class="frame" id="frame21">
+                                    <h3>Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)</h3>
+
+                            </li>
+                            <li class="frame" id="frame22">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)</h3>
+
+                            </li>
+                            <li class="frame" id="frame23">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame24">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List&lt;FilterItem&gt; filterItems)</h3>
+
+                            </li>
+                            <li class="frame" id="frame25">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame26">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame27">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame28">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame29">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler&#x2B;&lt;&gt;c__DisplayClass12_0.&lt;RouteAsync&gt;b__0(HttpContext c)</h3>
+
+                            </li>
+                            <li class="frame" id="frame30">
+                                    <h3>Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame31">
+                                    <h3>Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="rawExceptionBlock">
+                            <div class="showRawExceptionContainer">
+                                <button class="showRawException" data-exceptionDetailId="exceptionDetail1">Show raw exception details</button>
+                            </div>
+                            <div id="exceptionDetail1" class="rawExceptionDetails">
+                                <pre class="rawExceptionStackTrace">System.InvalidOperationException: Unable to resolve service for type &#x27;DocumentManagement.Infrastructure.Context.DatabaseContext&#x27; while attempting to activate &#x27;DocumentManagement.Infrastructure.Repository.UserRepository&#x27;.&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)&#xD;&#xA;   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;&#xA;   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.&lt;&gt;c__DisplayClass12_0.&lt;RouteAsync&gt;b__0(HttpContext c)&#xD;&#xA;   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)&#xD;&#xA;   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)</pre>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+
+        <div id="querypage" class="page">
+                <p>No QueryString data.</p>
+        </div>
+
+        <div id="cookiespage" class="page">
+                <p>No cookie data.</p>
+        </div>
+        <div id="headerspage" class="page">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                <tr>
+                                    <td>Accept</td>
+                                    <td>text/plain</td>
+                                </tr>
+                                <tr>
+                                    <td>Accept-Encoding</td>
+                                    <td>gzip, deflate, br</td>
+                                </tr>
+                                <tr>
+                                    <td>Accept-Language</td>
+                                    <td>pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7</td>
+                                </tr>
+                                <tr>
+                                    <td>Connection</td>
+                                    <td>Keep-Alive</td>
+                                </tr>
+                                <tr>
+                                    <td>dnt</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Host</td>
+                                    <td>localhost:44349</td>
+                                </tr>
+                                <tr>
+                                    <td>MS-ASPNETCORE-TOKEN</td>
+                                    <td>80348d57-1bf9-4941-a406-1a91b619646e</td>
+                                </tr>
+                                <tr>
+                                    <td>Referer</td>
+                                    <td>https://localhost:44349/swagger/index.html</td>
+                                </tr>
+                                <tr>
+                                    <td>User-Agent</td>
+                                    <td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</td>
+                                </tr>
+                                <tr>
+                                    <td>X-Original-For</td>
+                                    <td>127.0.0.1:62694</td>
+                                </tr>
+                                <tr>
+                                    <td>X-Original-Proto</td>
+                                    <td>http</td>
+                                </tr>
+                    </tbody>
+                </table>
+        </div>
+        <script>
+            //<!--
+            (function (window, undefined) {
+    "use strict";
+
+    function ns(selector, element) {
+        return new NodeCollection(selector, element);
+    }
+
+    function NodeCollection(selector, element) {
+        this.items = [];
+        element = element || window.document;
+
+        var nodeList;
+
+        if (typeof (selector) === "string") {
+            nodeList = element.querySelectorAll(selector);
+            for (var i = 0, l = nodeList.length; i < l; i++) {
+                this.items.push(nodeList.item(i));
+            }
+        }
+    }
+
+    NodeCollection.prototype = {
+        each: function (callback) {
+            for (var i = 0, l = this.items.length; i < l; i++) {
+                callback(this.items[i], i);
+            }
+            return this;
+        },
+
+        children: function (selector) {
+            var children = [];
+
+            this.each(function (el) {
+                children = children.concat(ns(selector, el).items);
+            });
+
+            return ns(children);
+        },
+
+        hide: function () {
+            this.each(function (el) {
+                el.style.display = "none";
+            });
+
+            return this;
+        },
+
+        toggle: function () {
+            this.each(function (el) {
+                el.style.display = el.style.display === "none" ? "" : "none";
+            });
+
+            return this;
+        },
+
+        show: function () {
+            this.each(function (el) {
+                el.style.display = "";
+            });
+
+            return this;
+        },
+
+        addClass: function (className) {
+            this.each(function (el) {
+                var existingClassName = el.className,
+                    classNames;
+                if (!existingClassName) {
+                    el.className = className;
+                } else {
+                    classNames = existingClassName.split(" ");
+                    if (classNames.indexOf(className) < 0) {
+                        el.className = existingClassName + " " + className;
+                    }
+                }
+            });
+
+            return this;
+        },
+
+        removeClass: function (className) {
+            this.each(function (el) {
+                var existingClassName = el.className,
+                    classNames, index;
+                if (existingClassName === className) {
+                    el.className = "";
+                } else if (existingClassName) {
+                    classNames = existingClassName.split(" ");
+                    index = classNames.indexOf(className);
+                    if (index > 0) {
+                        classNames.splice(index, 1);
+                        el.className = classNames.join(" ");
+                    }
+                }
+            });
+
+            return this;
+        },
+
+        attr: function (name) {
+            if (this.items.length === 0) {
+                return null;
+            }
+
+            return this.items[0].getAttribute(name);
+        },
+
+        on: function (eventName, handler) {
+            this.each(function (el, idx) {
+                var callback = function (e) {
+                    e = e || window.event;
+                    if (!e.which && e.keyCode) {
+                        e.which = e.keyCode; // Normalize IE8 key events
+                    }
+                    handler.apply(el, [e]);
+                };
+
+                if (el.addEventListener) { // DOM Events
+                    el.addEventListener(eventName, callback, false);
+                } else if (el.attachEvent) { // IE8 events
+                    el.attachEvent("on" + eventName, callback);
+                } else {
+                    el["on" + type] = callback;
+                }
+            });
+
+            return this;
+        },
+
+        click: function (handler) {
+            return this.on("click", handler);
+        },
+
+        keypress: function (handler) {
+            return this.on("keypress", handler);
+        }
+    };
+
+    function frame(el) {
+        ns(".source .collapsible", el).toggle();
+    }
+
+    function expandCollapseButton(el) {
+        var frameId = el.getAttribute("data-frameId");
+        frame(document.getElementById(frameId));
+        if (el.innerText === "+") {
+            el.innerText = "-";
+        }
+        else {
+            el.innerText = "+";
+        }
+    }
+
+    function tab(el) {
+        var unselected = ns("#header .selected").removeClass("selected").attr("id");
+        var selected = ns("#" + el.id).addClass("selected").attr("id");
+
+        ns("#" + unselected + "page").hide();
+        ns("#" + selected + "page").show();
+    }
+
+    ns(".rawExceptionDetails").hide();
+    ns(".collapsible").hide();
+    ns(".page").hide();
+    ns("#stackpage").show();
+
+    ns(".expandCollapseButton")
+        .click(function () {
+            expandCollapseButton(this);
+        })
+        .keypress(function (e) {
+            if (e.which === 13) {
+                expandCollapseButton(this);
+            }
+        });
+
+    ns("#header li")
+        .click(function () {
+            tab(this);
+        })
+        .keypress(function (e) {
+            if (e.which === 13) {
+                tab(this);
+            }
+        });
+
+    ns(".showRawException")
+        .click(function () {
+            var exceptionDetailId = this.getAttribute("data-exceptionDetailId");
+            ns("#" + exceptionDetailId).toggle();
+        });
+})(window);
+            //-->
+        </script>
+    </body>
+</html>
+ (3f3fb153)
+2018-09-16T18:55:45.2051102-03:00 0HLGS3SHBUVR8:00000004 [INF] Request finished in 116.8679ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-16T20:00:32.3346134-03:00 0HLGS50Q62T8N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T20:00:32.3839016-03:00 0HLGS50Q62T8N:00000001 [INF] Request: https://localhost:44349/swagger/index.html   (f3434e40)
+2018-09-16T20:00:32.7540960-03:00 0HLGS50Q62T8N:00000001 [INF] Response: <!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+          <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="locked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="close">
+      <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow">
+      <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow-down">
+      <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/>
+    </symbol>
+
+
+    <symbol viewBox="0 0 24 24" id="jump-to">
+      <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="expand">
+      <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<div id="swagger-ui"></div>
+
+<!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+<script>
+  if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+    window.fetch = undefined;
+  }
+</script>
+
+<script src="./swagger-ui-bundle.js"> </script>
+<script src="./swagger-ui-standalone-preset.js"> </script>
+<script>
+  window.onload = function () {
+    var configObject = JSON.parse('{"urls":[{"url":"/swagger/document-management-v1/swagger.json","name":"Document Management API"}],"validatorUrl":null}');
+    var oauthConfigObject = JSON.parse('{}');
+
+    // Apply mandatory parameters
+    configObject.dom_id = "#swagger-ui";
+    configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+    configObject.layout = "StandaloneLayout";
+
+    // If oauth2RedirectUrl isn't specified, use the built-in default
+    if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+      configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+
+    // Build a system
+    const ui = SwaggerUIBundle(configObject);
+
+    // Apply OAuth config
+    ui.initOAuth(oauthConfigObject);
+  }
+</script>
+</body>
+
+</html>
+ (749eb817)
+2018-09-16T20:00:32.7616792-03:00 0HLGS50Q62T8N:00000001 [INF] Request finished in 432.6499ms 200 text/html (791a596a)
+2018-09-16T20:04:18.9859550-03:00 0HLGS50Q62T8O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/index.html   (ca22a1cb)
+2018-09-16T20:04:18.9911482-03:00 0HLGS50Q62T8O:00000001 [INF] Request: https://localhost:44349/swagger/index.html   (f3434e40)
+2018-09-16T20:04:18.9987492-03:00 0HLGS50Q62T8O:00000001 [INF] Response: <!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+          <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="locked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="close">
+      <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow">
+      <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="large-arrow-down">
+      <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/>
+    </symbol>
+
+
+    <symbol viewBox="0 0 24 24" id="jump-to">
+      <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/>
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="expand">
+      <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<div id="swagger-ui"></div>
+
+<!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+<script>
+  if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+    window.fetch = undefined;
+  }
+</script>
+
+<script src="./swagger-ui-bundle.js"> </script>
+<script src="./swagger-ui-standalone-preset.js"> </script>
+<script>
+  window.onload = function () {
+    var configObject = JSON.parse('{"urls":[{"url":"/swagger/document-management-v1/swagger.json","name":"Document Management API"}],"validatorUrl":null}');
+    var oauthConfigObject = JSON.parse('{}');
+
+    // Apply mandatory parameters
+    configObject.dom_id = "#swagger-ui";
+    configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+    configObject.layout = "StandaloneLayout";
+
+    // If oauth2RedirectUrl isn't specified, use the built-in default
+    if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+      configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+
+    // Build a system
+    const ui = SwaggerUIBundle(configObject);
+
+    // Apply OAuth config
+    ui.initOAuth(oauthConfigObject);
+  }
+</script>
+</body>
+
+</html>
+ (749eb817)
+2018-09-16T20:04:19.0084153-03:00 0HLGS50Q62T8O:00000001 [INF] Request finished in 17.9819ms 200 text/html (791a596a)
+2018-09-16T20:04:19.5842567-03:00 0HLGS50Q62T8O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44349/swagger/document-management-v1/swagger.json   (ca22a1cb)
+2018-09-16T20:04:19.5886516-03:00 0HLGS50Q62T8O:00000002 [INF] Request: https://localhost:44349/swagger/document-management-v1/swagger.json   (18666e6f)
+2018-09-16T20:04:19.8354395-03:00 0HLGS50Q62T8O:00000002 [INF] Response: {"swagger":"2.0","info":{"version":"v1","title":"Document Management API"},"paths":{"/api/Document":{"get":{"tags":["Document"],"summary":"Get Uploaded Documents","operationId":"ApiDocumentGet","consumes":[],"produces":["text/plain","application/json","text/json"],"parameters":[],"responses":{"200":{"description":"Success","schema":{"uniqueItems":false,"type":"array","items":{"$ref":"#/definitions/DocumentDTO"}}},"post":{"tags":["Document"],"summary":"Get Uploaded Documents","operationId":"ApiDocumentPost","consumes":["application/json-patch+json","application/json","text/json","application/*+json"],"produces":["text/plain","application/json","text/json"],"parameters":[{"name":"value","in":"body","required":false,"schema":{"$ref":"#/definitions/DocumentInsertDTO"}}],"responses":{"201":{"description":"Success","schema":{"format":"int64","type":"integer"}},"400":{"description":"Bad Request","schema":{"uniqueItems":false,"type":"array","items":{"type":"string"}}}},"/api/Document/{id}":{"delete":{"tags":["Document"],"summary":"Delete document","operationId":"ApiDocumentByIdDelete","consumes":[],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int64"}],"responses":{"204":{"description":"Success"}},"patch":{"tags":["Document"],"summary":"Update Access Date","operationId":"ApiDocumentByIdPatch","consumes":[],"produces":[],"parameters":[{"name":"id","in":"path","required":true,"type":"integer","format":"int64"}],"responses":{"204":{"description":"Success"}}},"definitions":{"DocumentDTO":{"type":"object","properties":{"id":{"format":"int64","type":"integer"},"name":{"type":"string"},"size":{"format":"int64","type":"integer"},"format":{"type":"string"},"contentBase64":{"type":"string"},"uploadDate":{"format":"date-time","type":"string"},"updateDate":{"format":"date-time","type":"string"},"lastAccessDate":{"format":"date-time","type":"string"}},"DocumentInsertDTO":{"required":["name","size","format","contentBase64"],"type":"object","properties":{"name":{"type":"string"},"size":{"format":"int64","type":"integer"},"format":{"type":"string"},"contentBase64":{"type":"string"}}} (8a1bd2fd)
+2018-09-16T20:04:19.8386787-03:00 0HLGS50Q62T8O:00000002 [INF] Request finished in 256.0608ms 200 application/json;charset=utf-8 (791a596a)

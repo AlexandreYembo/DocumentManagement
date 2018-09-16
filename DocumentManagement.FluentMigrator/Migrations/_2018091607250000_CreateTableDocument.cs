@@ -10,13 +10,14 @@ namespace DocumentManagement.FluentMigrator.Migrations
         {
             Create.Table("DOCUMENT")
                 .WithColumn("IDDOCUMENT").AsInt64().NotNullable().PrimaryKey().Identity()
-                .WithColumn("IDUSERAPP").AsString(100).NotNullable().ForeignKey("USERAPP", "IDUSERAPP")
+                .WithColumn("IDUSERAPP").AsInt64().NotNullable().ForeignKey("USERAPP", "IDUSERAPP")
                 .WithColumn("FILENAME").AsString(100).Nullable()
                 .WithColumn("FILESIZE").AsInt64().NotNullable()
                 .WithColumn("FILEFORMAT").AsString(50).Nullable()
                 .WithColumn("UPLOADDATE").AsDateTime().NotNullable().WithDefaultValue(DateTime.Now)
                 .WithColumn("UPDATEDATE").AsDateTime().Nullable()
-                .WithColumn("LASTACCESSDATE").AsDateTime().Nullable();
+                .WithColumn("LASTACCESSDATE").AsDateTime().Nullable()
+                .WithColumn("FILENAMESTORAGE").AsString(100).Nullable();
         }
 
         public override void Down()

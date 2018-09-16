@@ -16,6 +16,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
+using DocumentManagement.API.Middlewares;
+using DocumentManagement.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace DocumentManagement.API
 {
@@ -54,11 +57,15 @@ namespace DocumentManagement.API
             services.AddScoped<IDocumentRepository, DocumentRepository>();
 
             services.AddScoped<UsernameRequirementFilter>();
+
+            services.AddDbContext<DatabaseContext>(options => options
+                .UseSqlServer(Configuration.GetConnectionString("DatabaseContext")));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddFile("Logs/documentManagement-{Date}.txt");
+            app.UseLoggingMiddleware();
 
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
@@ -73,6 +80,7 @@ namespace DocumentManagement.API
             {
                 c.SwaggerEndpoint("/swagger/document-management-v1/swagger.json", "Document Management API");
             });
+
 
             app.UseWelcomePage("/");
         }

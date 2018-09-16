@@ -4,5 +4,25 @@
         <name>DocumentManagement.API</name>
     </assembly>
     <members>
+        <member name="M:DocumentManagement.API.Controllers.DocumentController.List">
+            <summary>
+            Get Uploaded Documents
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.API.Controllers.DocumentController.Post(DocumentManagement.Application.DTOs.DocumentInsertDTO)">
+            <summary>
+            Get Uploaded Documents
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.API.Controllers.DocumentController.UpdateAccessDate(System.Int64)">
+            <summary>
+            Update Access Date
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.API.Controllers.DocumentController.Delete(System.Int64)">
+            <summary>
+            Delete document
+            </summary>
+        </member>
     </members>
 </doc>
