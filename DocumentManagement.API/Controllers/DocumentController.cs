@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using DocumentManagement.API.Handlers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DocumentManagement.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    [ApiExplorerSettings(GroupName = "document-management-v1")]
+    [ServiceFilter(typeof(UsernameRequirementFilter))]
+    public class DocumentController : ControllerBase
     {
         // GET api/values
         [HttpGet]

@@ -1,47 +1,80 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.IO;
+using DocumentManagement.Application.AutoMapper.Profiles;
+using DocumentManagement.API.Handlers;
+using DocumentManagement.Application.Interfaces;
+using DocumentManagement.Application.Services;
+using DocumentManagement.Domain.Interfaces;
+using DocumentManagement.Infrastructure.Repository;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace DocumentManagement.API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IServiceProvider serviceProvider)
         {
             Configuration = configuration;
+            ServiceProvider = serviceProvider;
         }
 
         public IConfiguration Configuration { get; }
+        private IServiceProvider ServiceProvider { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("document-management-v1", new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Title = "Document Management API",
+                    Version = "v1"
+                });
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{System.Reflection.Assembly.GetEntryAssembly().GetName().Name}.xml"));
+            });
+
+            Mapper.Initialize(cfg => cfg.AddProfile<DocumentProfile>());
+            Mapper.AssertConfigurationIsValid();
+
+
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IDocumentService, DocumentService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IDocumentRepository, DocumentRepository>();
+
+            services.AddScoped<UsernameRequirementFilter>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/documentManagement-{Date}.txt");
+
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
             else
-            {
                 app.UseHsts();
-            }
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/document-management-v1/swagger.json", "Document Management API");
+            });
+
+            app.UseWelcomePage("/");
         }
     }
 }
