@@ -74,6 +74,7 @@ namespace DocumentManagement.API
         {
             loggerFactory.AddFile("Logs/documentManagement-{Date}.txt");
             app.UseLoggingMiddleware();
+            app.UseMiddleware<ExceptionMiddleware>();
 
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();

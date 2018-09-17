@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentManagement.FluentMi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentManagement.Web", "DocumentManagement.Web\DocumentManagement.Web.csproj", "{4356B764-A638-46AE-94F3-E1125FA08065}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{4E30F603-E88E-4488-8251-CBB70AD9FA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentManagement.Tests", "DocumentManagement.Tests\DocumentManagement.Tests.csproj", "{EE0BD610-AD14-4929-8597-CADECC2706E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{4356B764-A638-46AE-94F3-E1125FA08065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4356B764-A638-46AE-94F3-E1125FA08065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4356B764-A638-46AE-94F3-E1125FA08065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0BD610-AD14-4929-8597-CADECC2706E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0BD610-AD14-4929-8597-CADECC2706E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0BD610-AD14-4929-8597-CADECC2706E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0BD610-AD14-4929-8597-CADECC2706E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +74,7 @@ Global
 		{C3143373-7EF9-4B14-8D20-0E60FB92BA86} = {48DAC07D-8875-4087-8E33-96768398C319}
 		{38638088-393A-4426-85C7-AA8CA4BC45B6} = {06FAC708-0716-4C96-8FFE-92AA3F8BD759}
 		{4356B764-A638-46AE-94F3-E1125FA08065} = {8CED6547-073F-45C2-8F08-983D631BA6C5}
+		{EE0BD610-AD14-4929-8597-CADECC2706E4} = {4E30F603-E88E-4488-8251-CBB70AD9FA59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0FF5153C-899B-4E38-BF59-5DA8224B6ADE}
