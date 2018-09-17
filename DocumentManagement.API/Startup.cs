@@ -59,7 +59,6 @@ namespace DocumentManagement.API
             Mapper.Initialize(cfg => cfg.AddProfile<DocumentProfile>());
             Mapper.AssertConfigurationIsValid();
 
-
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IDocumentService, DocumentService>();
             services.AddScoped<IUserRepository, UserRepository>();

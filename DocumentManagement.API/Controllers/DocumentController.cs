@@ -78,7 +78,7 @@ namespace DocumentManagement.API.Controllers
         /// Delete document
         /// </summary>
         /// <param name="id">Document identifier</param>
-        [SwaggerResponse((int)HttpStatusCode.NoContent, "Documents deleteds succefully.")]
+        [SwaggerResponse((int)HttpStatusCode.NoContent, "Documents deleted succefully.")]
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
