@@ -11,8 +11,8 @@ namespace DocumentManagement.API.Handlers
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            var admin = context.HttpContext.Request.Headers.Keys.FirstOrDefault(k => k.Equals("admin", StringComparison.InvariantCultureIgnoreCase));
-            if (!string.IsNullOrWhiteSpace(admin) && admin.Equals("1"))
+            var admin = context.HttpContext.Request.Headers.FirstOrDefault(k => k.Key.Equals("admin", StringComparison.InvariantCultureIgnoreCase));
+            if (admin.Key != null && admin.Value.Equals("1"))
                 base.OnActionExecuting(context);
             else
                 context.Result = new ContentResult()

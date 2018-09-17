@@ -11,8 +11,8 @@ namespace DocumentManagement.API.Handlers
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            var username = context.HttpContext.Request.Headers.Keys.FirstOrDefault(k => k.Equals("username", StringComparison.InvariantCultureIgnoreCase));
-            if (!string.IsNullOrWhiteSpace(username))
+            var username = context.HttpContext.Request.Headers.FirstOrDefault(k => k.Key.Equals("username", StringComparison.InvariantCultureIgnoreCase));
+            if (username.Key != null)
                 base.OnActionExecuting(context);
             else
                 context.Result = new ContentResult()

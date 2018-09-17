@@ -53,9 +53,9 @@ namespace DocumentManagement.API.Controllers
             if (validation.Any())
                 return BadRequest(validation);
 
-            var username = this.HttpContext.Request.Headers.Keys.FirstOrDefault(k => k.Equals("username", StringComparison.InvariantCultureIgnoreCase));
+            var username = this.HttpContext.Request.Headers.FirstOrDefault(k => k.Key.Equals("username", StringComparison.InvariantCultureIgnoreCase)).Value;
 
-           return StatusCode((int)HttpStatusCode.Created, _documentService.Create(Mapper.Map<Document>(value), username));
+            return Created("", _documentService.Create(Mapper.Map<Document>(value), username));
         }
 
         /// <summary>
