@@ -3,6 +3,7 @@ using DocumentManagement.API.Handlers;
 using DocumentManagement.Application.DTOs;
 using DocumentManagement.Application.Interfaces;
 using DocumentManagement.Domain.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
@@ -15,7 +16,7 @@ namespace DocumentManagement.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [ApiExplorerSettings(GroupName = "document-management-v1")]
-    [ServiceFilter(typeof(UsernameRequirementFilter))]
+    [UsernameRequirementFilter]
     public class DocumentController : ControllerBase
     {
         private readonly IDocumentService _documentService;
@@ -37,12 +38,15 @@ namespace DocumentManagement.API.Controllers
         }
 
         /// <summary>
-        /// Get Uploaded Documents
+        /// Upload New Document
         /// </summary>
+        /// <param name="value">Model</param>
+        /// <returns></returns>
         [SwaggerResponse((int)HttpStatusCode.Created, "Documents created succefully.", typeof(long))]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, "Error.", typeof(IEnumerable<string>))]
         [Route("")]
         [HttpPost]
+        [AdminRequirementFilter]
         public IActionResult Post([FromBody] DocumentInsertDTO value)
         {
             var validation = ModelState.Values.SelectMany(x => x.Errors).Select(c => c.ErrorMessage);
@@ -57,6 +61,7 @@ namespace DocumentManagement.API.Controllers
         /// <summary>
         /// Update Access Date
         /// </summary>
+        /// <param name="id">Document identifier</param>
         [SwaggerResponse((int)HttpStatusCode.NoContent, "Documents changed succefully.")]
         [HttpPatch("{id}")]
         public IActionResult UpdateAccessDate(long id)
@@ -72,6 +77,7 @@ namespace DocumentManagement.API.Controllers
         /// <summary>
         /// Delete document
         /// </summary>
+        /// <param name="id">Document identifier</param>
         [SwaggerResponse((int)HttpStatusCode.NoContent, "Documents deleteds succefully.")]
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)

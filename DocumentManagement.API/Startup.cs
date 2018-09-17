@@ -19,6 +19,7 @@ using Microsoft.Extensions.Logging;
 using DocumentManagement.API.Middlewares;
 using DocumentManagement.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
+using DocumentManagement.Infrastructure.Storage;
 
 namespace DocumentManagement.API
 {
@@ -36,6 +37,14 @@ namespace DocumentManagement.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddCors(o => o.AddPolicy("Policy", builder =>
+            {
+                builder.AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin()
+                .AllowCredentials();
+            }));
 
             services.AddSwaggerGen(options =>
             {
@@ -55,8 +64,7 @@ namespace DocumentManagement.API
             services.AddScoped<IDocumentService, DocumentService>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IDocumentRepository, DocumentRepository>();
-
-            services.AddScoped<UsernameRequirementFilter>();
+            services.AddScoped<IDocumentStorage, DocumentStorage>();
 
             services.AddDbContext<DatabaseContext>(options => options
                 .UseSqlServer(Configuration.GetConnectionString("DatabaseContext")));
@@ -72,6 +80,8 @@ namespace DocumentManagement.API
             else
                 app.UseHsts();
 
+            app.UseCors("Policy");
+
             app.UseHttpsRedirection();
             app.UseMvc();
 
@@ -80,7 +90,6 @@ namespace DocumentManagement.API
             {
                 c.SwaggerEndpoint("/swagger/document-management-v1/swagger.json", "Document Management API");
             });
-
 
             app.UseWelcomePage("/");
         }

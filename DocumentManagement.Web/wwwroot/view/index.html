@@ -1,0 +1,19 @@
+﻿
+<center>
+    <div class="col-md-12">
+        <form ng-submit="formSubmit()" class="form">
+            <div class="row">
+                <div class="form-group">
+                    <label>Username?<input type="text" class="form-control" ng-model="username" placeholder="Username" required /></label>
+                </div>
+                <div class="form-group">
+                    <label>Is Admin?<input type="checkbox" class="form-control" ng-model="isAdmin" /></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Login</button>
+                <span class="text-danger">{{ error }}</span>
+            </div>
+        </form>
+    </div>
+</center>

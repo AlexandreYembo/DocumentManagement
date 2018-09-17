@@ -15,11 +15,15 @@ namespace DocumentManagement.Infrastructure.Mapping
             builder.Property(t => t.Id).HasColumnName("IDDOCUMENT");
             builder.Property(t => t.Name).HasColumnName("FILENAME");
             builder.Property(t => t.Size).HasColumnName("FILESIZE");
+            builder.Property(t => t.IdUser).HasColumnName("IDUSERAPP");
             builder.Property(t => t.Format).HasColumnName("FILEFORMAT");
             builder.Property(t => t.UploadDate).HasColumnName("UPLOADDATE");
             builder.Property(t => t.UpdateDate).HasColumnName("UPDATEDATE");
             builder.Property(t => t.LastAccessDate).HasColumnName("LASTACCESSDATE");
             builder.Property(t => t.FileNameStored).HasColumnName("FILENAMESTORAGE");
+            builder.Ignore(t => t.ContentBase64);
+
+            builder.HasOne(p => p.User).WithMany().HasForeignKey(p => p.IdUser);
         }
     }
 }

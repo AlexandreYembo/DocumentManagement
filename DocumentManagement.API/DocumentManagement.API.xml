@@ -11,18 +11,22 @@
         </member>
         <member name="M:DocumentManagement.API.Controllers.DocumentController.Post(DocumentManagement.Application.DTOs.DocumentInsertDTO)">
             <summary>
-            Get Uploaded Documents
+            Upload New Document
             </summary>
+            <param name="value">Model</param>
+            <returns></returns>
         </member>
         <member name="M:DocumentManagement.API.Controllers.DocumentController.UpdateAccessDate(System.Int64)">
             <summary>
             Update Access Date
             </summary>
+            <param name="id">Document identifier</param>
         </member>
         <member name="M:DocumentManagement.API.Controllers.DocumentController.Delete(System.Int64)">
             <summary>
             Delete document
             </summary>
+            <param name="id">Document identifier</param>
         </member>
     </members>
 </doc>

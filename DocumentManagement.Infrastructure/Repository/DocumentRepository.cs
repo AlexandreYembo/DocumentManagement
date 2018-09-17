@@ -36,7 +36,7 @@ namespace DocumentManagement.Infrastructure.Repository
         }
 
         public IEnumerable<Document> List() =>
-            _dbContext.Documents.AsNoTracking().ToList();
+            _dbContext.Documents.AsNoTracking().OrderByDescending(d => d.LastAccessDate).ToList();
 
         public void UpdateAccessDate(long id)
         {

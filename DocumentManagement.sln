@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentManagement.Applicat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentManagement.FluentMigrator", "DocumentManagement.FluentMigrator\DocumentManagement.FluentMigrator.csproj", "{38638088-393A-4426-85C7-AA8CA4BC45B6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentManagement.Web", "DocumentManagement.Web\DocumentManagement.Web.csproj", "{4356B764-A638-46AE-94F3-E1125FA08065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{38638088-393A-4426-85C7-AA8CA4BC45B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38638088-393A-4426-85C7-AA8CA4BC45B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38638088-393A-4426-85C7-AA8CA4BC45B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4356B764-A638-46AE-94F3-E1125FA08065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4356B764-A638-46AE-94F3-E1125FA08065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4356B764-A638-46AE-94F3-E1125FA08065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4356B764-A638-46AE-94F3-E1125FA08065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{FA51DCBE-DC6F-4BAA-96E7-476106E2EFF6} = {A89A9EC5-0075-4C08-BE42-4279346B1C6A}
 		{C3143373-7EF9-4B14-8D20-0E60FB92BA86} = {48DAC07D-8875-4087-8E33-96768398C319}
 		{38638088-393A-4426-85C7-AA8CA4BC45B6} = {06FAC708-0716-4C96-8FFE-92AA3F8BD759}
+		{4356B764-A638-46AE-94F3-E1125FA08065} = {8CED6547-073F-45C2-8F08-983D631BA6C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0FF5153C-899B-4E38-BF59-5DA8224B6ADE}
