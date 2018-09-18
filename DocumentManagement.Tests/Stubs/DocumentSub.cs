@@ -6,7 +6,7 @@ namespace DocumentManagement.Tests.Stubs
 {
     public static class DocumentSub
     {
-        public static DocumentDTO SimpleDocument = new DocumentDTO()
+        public static DocumentDTO SimpleDocument = new DocumentDTO
         {
             Id = 1,
             Name = "Default",
@@ -15,7 +15,7 @@ namespace DocumentManagement.Tests.Stubs
             ContentBase64 = "abcabcabcabcabcabcabcabcabcabc"
         };
 
-        public static List<Document> ListDocument = new List<Document>()
+        public static List<Document> ListDocument = new List<Document>
         {
             new Document
             {
@@ -33,6 +33,14 @@ namespace DocumentManagement.Tests.Stubs
                 Size = 200,
                 ContentBase64 = "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcab"
             }
+        };
+
+        public static DocumentInsertDTO DocumentInsert = new DocumentInsertDTO
+        {
+            ContentBase64 = "abcabcabcabcabcabcabcabcabcabc",
+            Format = "csv",
+            Name = "Name",
+            Size = 2112
         };
     }
 }
