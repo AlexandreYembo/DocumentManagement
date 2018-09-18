@@ -11,6 +11,7 @@ Backend requirements:
 Frontend requirements:
 
 * Node v6.11 or higher
+* NPM v3.0.0 or higher
 
 ### Features
 
@@ -22,6 +23,7 @@ Frontend requirements:
 * AutoMapper
 * Unit Tests using MSTest + ASP.NET Core 2.1
 * Frontend using AngularJS
+* Exceptions logged
 
 ### Building and executing
 
@@ -35,7 +37,7 @@ Execute script create schema in database (create a new database DocumentManageme
 DocumentManagement\DocumentManagement.FluentMigrator\create_schema.sql
 ```
 
-Complile project migration project
+Compile project migration project
 ```sh
 DocumentManagement.FluentMigrator
 ```
@@ -72,10 +74,15 @@ DocumentManagement\DocumentManagement.Web
 npm install
 ```
 
+Change API hosting port if necessary (default port running from VS2017 is 44349)
+```sh
+DocumentManagement\DocumentManagement.Web
+```
+
 Run Frontend project
 ```sh
 DocumentManagement\DocumentManagement.Web
-npm start
+npm run serve
 ```
 
 ### Testing
@@ -89,5 +96,5 @@ dotnet test
 Unit test Frontend project
 ```sh
 DocumentManagement\DocumentManagement.Web
-npm test
+npm run test
 ```
