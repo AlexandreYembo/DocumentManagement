@@ -3,7 +3,6 @@ using DocumentManagement.API.Handlers;
 using DocumentManagement.Application.DTOs;
 using DocumentManagement.Application.Interfaces;
 using DocumentManagement.Domain.Models;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
