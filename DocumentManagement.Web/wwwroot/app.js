@@ -53,6 +53,7 @@
                     .then(
                         function (result) {
                             if (result && result.status === 201) {
+                                $scope.getDocuments();
                                 alert("Uploaded");
                             }
                         });

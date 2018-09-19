@@ -4,7 +4,7 @@
 
 * Git (for cloning repository)
 * ASP.NET Core 2.1 SDK
-* Microsoft Visual Studio 2017
+* Microsoft Visual Studio 2017 Community Edition or higher
 * Microsoft SQL Server 2014 or higher
 
 ### Features
@@ -33,7 +33,8 @@ DocumentManagement\DocumentManagement.FluentMigrator\create_schema.sql
 
 Compile project migration project
 ```sh
-DocumentManagement.FluentMigrator
+Open DocumentManagement\DocumentManagement.sln
+DocumentManagement\DocumentManagement.FluentMigrator
 ```
 
 Change database connection script from bat (if necessary)
@@ -56,15 +57,15 @@ Change database connection script from application (if necessary)
 DocumentManagement\DocumentManagement.API\appsettings.json
 ```
 
+Change API hosting port if necessary (default port running from VS2017 is 44349)
+```sh
+DocumentManagement\DocumentManagement.Web\wwwroot\app.js
+```
+
 Run projects
 ```sh
 DocumentManagement\DocumentManagement.API
 DocumentManagement\DocumentManagement.Web
-```
-
-Change API hosting port if necessary (default port running from VS2017 is 44349)
-```sh
-DocumentManagement\DocumentManagement.Web\wwwroot\app.js
 ```
 
 ### Testing
