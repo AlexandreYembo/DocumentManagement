@@ -15,6 +15,15 @@ namespace DocumentManagement.Tests.Stubs
             ContentBase64 = "abcabcabcabcabcabcabcabcabcabc"
         };
 
+        public static Document SimpleDocument2 = new Document
+        {
+            Id = 1,
+            Name = "Default",
+            Format = "csv",
+            Size = 100,
+            ContentBase64 = "abcabcabcabcabcabcabcabcabcabc"
+        };
+
         public static List<Document> ListDocument = new List<Document>
         {
             new Document

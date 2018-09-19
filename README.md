@@ -3,17 +3,9 @@
 ### Requirements
 
 * Git (for cloning repository)
-
-Backend requirements:
-
 * ASP.NET Core 2.1 SDK
-* Microsoft Visual Studio 2017 or Microsoft Visual Code
+* Microsoft Visual Studio 2017
 * Microsoft SQL Server 2014 or higher
-
-Frontend requirements:
-
-* Node v6.11 or higher
-* NPM v3.0.0 or higher
 
 ### Features
 
@@ -64,27 +56,15 @@ Change database connection script from application (if necessary)
 DocumentManagement\DocumentManagement.API\appsettings.json
 ```
 
-Run API project
+Run projects
 ```sh
 DocumentManagement\DocumentManagement.API
-dotnet run
-```
-
-Restore Frontend project
-```sh
 DocumentManagement\DocumentManagement.Web
-npm install
 ```
 
 Change API hosting port if necessary (default port running from VS2017 is 44349)
 ```sh
-DocumentManagement\DocumentManagement.Web
-```
-
-Run Frontend project
-```sh
-DocumentManagement\DocumentManagement.Web
-npm run serve
+DocumentManagement\DocumentManagement.Web\wwwroot\app.js
 ```
 
 ### Testing
@@ -93,10 +73,4 @@ Unit test API project (from VS 2017 or VSCode)
 ```sh
 DocumentManagement\DocumentManagement.Tests
 dotnet test
-```
-
-Unit test Frontend project
-```sh
-DocumentManagement\DocumentManagement.Web
-npm run test
 ```

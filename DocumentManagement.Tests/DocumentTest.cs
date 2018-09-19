@@ -127,7 +127,7 @@ namespace DocumentManagement.Tests
         public void DeleteOk()
         {
             var documentRepositoryMock = new Mock<IDocumentRepository>();
-            documentRepositoryMock.Setup(x => x.Delete(DocumentSub.SimpleDocument.Id));
+            documentRepositoryMock.Setup(x => x.Delete(DocumentSub.SimpleDocument2));
 
             var documentServiceMock = new Mock<DocumentService>(documentRepositoryMock.Object, null, null);
 
