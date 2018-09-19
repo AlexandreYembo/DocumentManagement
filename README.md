@@ -16,7 +16,7 @@
 * Migration project (Fluent Migrator)
 * AutoMapper
 * Unit Tests using MSTest + ASP.NET Core 2.1
-* Frontend using AngularJS
+* Frontend using AngularJS (basic structure)
 * All exceptions are logged
 
 ### Building and executing
