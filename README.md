@@ -2,6 +2,8 @@
 
 ### Requirements
 
+* Git (for cloning repository)
+
 Backend requirements:
 
 * ASP.NET Core 2.1 SDK
@@ -23,7 +25,7 @@ Frontend requirements:
 * AutoMapper
 * Unit Tests using MSTest + ASP.NET Core 2.1
 * Frontend using AngularJS
-* Exceptions logged
+* All exceptions are logged
 
 ### Building and executing
 

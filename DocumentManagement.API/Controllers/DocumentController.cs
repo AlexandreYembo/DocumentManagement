@@ -48,9 +48,10 @@ namespace DocumentManagement.API.Controllers
         [AdminRequirementFilter]
         public IActionResult Post([FromBody] DocumentInsertDTO value)
         {
-            var validation = ModelState.Values.SelectMany(x => x.Errors).Select(c => c.ErrorMessage);
-            if (validation.Any())
-                return BadRequest(validation);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
             var username = this.HttpContext.Request.Headers.FirstOrDefault(k => k.Key.Equals("username", StringComparison.InvariantCultureIgnoreCase)).Value;
 

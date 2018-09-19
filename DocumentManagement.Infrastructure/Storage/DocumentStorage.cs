@@ -13,13 +13,10 @@ namespace DocumentManagement.Infrastructure.Storage
     {
         public string GetBase64(string fileNameStored)
         {
-            var path = Path.Combine(AppContext.BaseDirectory, "files", fileNameStored);
+            var path = Path.Combine(AppContext.BaseDirectory, fileNameStored);
 
             if (File.Exists(path))
-            {
-                Byte[] bytes = File.ReadAllBytes(path);
-                return Convert.ToBase64String(bytes);
-            }
+                return File.ReadAllText(path);
             return string.Empty;
         }
 
@@ -27,14 +24,19 @@ namespace DocumentManagement.Infrastructure.Storage
         {
             var storageName = $"{name}{DateTime.Now.ToString("yyyyMMddHHmmss")}";
 
-            var path = Path.Combine(AppContext.BaseDirectory, "files");
+            var path = Path.Combine(AppContext.BaseDirectory, storageName);
 
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-
-            File.WriteAllBytes(path, Convert.FromBase64String(content));
+            File.WriteAllText(path, content);
 
             return storageName;
+        }
+
+        public void Delete(string fileNameStored)
+        {
+            var path = Path.Combine(AppContext.BaseDirectory, fileNameStored);
+
+            if (File.Exists(path))
+                File.Delete(path);
         }
     }
 }

@@ -19,21 +19,25 @@ namespace DocumentManagement.Infrastructure.Repository
 
         public long Create(Document document)
         {
+            document.LastAccessDate = DateTime.Now;
+            document.UploadDate = DateTime.Now;
             _dbContext.Documents.Add(document);
             _dbContext.SaveChanges();
 
             return document.Id;
         }
 
-        public void Delete(long id)
+        public void Delete(Document document)
         {
-            var document = _dbContext.Documents.FirstOrDefault(d => d.Id == id);
             if (document != null)
             {
                 _dbContext.Documents.Remove(document);
                 _dbContext.SaveChanges();
             }
         }
+
+        public Document GetById(long id) =>
+            _dbContext.Documents.FirstOrDefault(d => d.Id == id);
 
         public IEnumerable<Document> List() =>
             _dbContext.Documents.AsNoTracking().OrderByDescending(d => d.LastAccessDate).ToList();
@@ -44,6 +48,7 @@ namespace DocumentManagement.Infrastructure.Repository
             if (document != null)
             {
                 document.LastAccessDate = DateTime.Now;
+                document.UpdateDate = DateTime.Now;
                 _dbContext.Documents.Update(document);
                 _dbContext.SaveChanges();
             }

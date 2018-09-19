@@ -39,8 +39,15 @@ namespace DocumentManagement.Application.Services
             return _documentRepository.Create(document);
         }
 
-        public void Delete(long id) =>
-            _documentRepository.Delete(id);
+        public void Delete(long id)
+        {
+            var document = _documentRepository.GetById(id);
+            if (document != null)
+            {
+                _documentStorage.Delete(document.FileNameStored);
+                _documentRepository.Delete(document);
+             }
+        }
 
         public IEnumerable<DocumentDTO> List() =>
             _documentRepository.List().Select(d =>

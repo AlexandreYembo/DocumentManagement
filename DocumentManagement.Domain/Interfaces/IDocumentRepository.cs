@@ -7,7 +7,8 @@ namespace DocumentManagement.Domain.Interfaces
     {
         void UpdateAccessDate(long id);
         IEnumerable<Document> List();
-        void Delete(long id);
+        void Delete(Document document);
         long Create(Document document);
+        Document GetById(long id);
     }
 }
